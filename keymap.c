@@ -12,9 +12,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_ESC,  KC_LCTRL,KC_LALT, KC_LCMD, L_NUM,   KC_BSPC, SPC_3,   L_SYM,   KC_RCMD, KC_RALT, KC_RCTRL,KC_ENT
   ),
   [_QWERTY] = LAYOUT(
-    _______, KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    _______,
-    _______, CTL_A,   ALT_S,   CMD_D,   SHT_F,   KC_G,    KC_H,    SHT_J,   CMD_K,   ALT_L,   CTL_CLN, _______,
-    _______, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  _______, _______,
+    _______, _______, _______, KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    _______,
+    _______, _______, ALT_S,   CMD_D,   SHT_F,   KC_G,    _______, SHT_J,   CMD_K,   ALT_L,   CTL_CLN, _______,
+    _______, _______, _______, _______, _______, _______, KC_N,    _______, _______, _______, _______, _______,
     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
   ),
   [_MOVE] = LAYOUT(
