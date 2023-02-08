@@ -7,9 +7,9 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_COLEMAK] = LAYOUT(
     KC_ESC,  KC_Q,    KC_W,    KC_F,    KC_P,    KC_G,    KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_BSPC,
-    KC_TAB,  CTL_A,   ALT_R,   CMD_S,   SHT_T,   KC_D,    KC_H,    SHT_N,   CMD_E,   ALT_I,   CTL_O,   KC_QUOT,
-    KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,
-    KC_ESC,  KC_LCTRL,KC_LALT, KC_LCMD, L_NUM,   KC_BSPC, SPC_3,   L_SYM,   KC_RCMD, KC_RALT, KC_RCTRL,KC_ENT
+    ZOOMLEFT,CTL_A,   ALT_R,   CMD_S,   SHT_T,   KC_D,    KC_H,    SHT_N,   CMD_E,   ALT_I,   CTL_O,   ZOOMRIGHT,
+    ZOOMFULL,KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, ZOOMFULL,
+    KC_ESC,  KC_LCTL, KC_LALT, KC_LCMD, L_NUM,   KC_BSPC, SPC_3,   L_SYM,   KC_RCMD, KC_RALT, KC_RCTL, KC_ENT
   ),
   [_QWERTY] = LAYOUT(
     _______, _______, _______, KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    _______,
@@ -32,13 +32,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_SYMBOL] = LAYOUT(
     _______, KC_EXLM,   KC_AT, KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, _______,
     _______, M_EMAIL, _______, KC_GRV,  KC_QUOT, KC_COLN, KC_BSLS, KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC, _______,
-    _______, RESET,   _______, KC_TILD, KC_DQUO, KC_SCLN, KC_PIPE, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, _______,
+    _______, QK_BOOT, _______, KC_TILD, KC_DQUO, KC_SCLN, KC_PIPE, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, _______,
     _______, _______, _______, _______, L_ADJ,   KC_DEL,  _______, _______, _______, _______, _______, _______
   ),
   [_ADJUST] = LAYOUT(
     _______, QWERTY,  COLEMAK, _______, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_VOLU, _______,
     _______, M_EMAIL, _______, KC_GRV,  KC_QUOT, KC_COLN, KC_BSLS, KC_MPLY, KC_EQL,  KC_LBRC, KC_MUTE, _______,
-    _______, RESET,   _______, KC_TILD, KC_DQUO, KC_SCLN, KC_PIPE, KC_UNDS, KC_PLUS, KC_LCBR, KC_VOLD, _______,
+    _______, QK_BOOT, _______, KC_TILD, KC_DQUO, KC_SCLN, KC_PIPE, KC_UNDS, KC_PLUS, KC_LCBR, KC_VOLD, _______,
     _______, _______, _______, _______, L_ADJ,   KC_DEL,  _______, _______, _______, _______, _______, _______
   )
 };
